@@ -28,6 +28,13 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    
+    $('.line-up').on('click', function() {
+      $('.meeseeks').css({left: 200, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
+      $('.birdPerson').css({left: 1200, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
+      $('.blinky').css({top: 100, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
+      $('.MrPBH').css({top: 600, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
+    });
   });
 });
 

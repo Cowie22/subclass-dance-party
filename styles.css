@@ -4,12 +4,16 @@ body, html{
 body{
   margin: 0px;
   background-image: url("https://wallpapercave.com/wp/wp1822726.jpg");
+
+  background-repeat: no-repeat;
+  background-size: auto;
   font-size: 18px;
-  max-width: 2000px;
-  max-height: 2000px;
+  max-width: all;
+  max-height: all;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+  
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -23,6 +27,9 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+  
+}
+.blinky{
   content:url(https://vignette.wikia.nocookie.net/rickandmorty/images/1/19/Pickle_rick_transparent.png/revision/latest?cb=20171025014216);
   max-height: 125px;
   max-width: 125px;
@@ -39,4 +46,24 @@ body, a:link, a:visited, a:active{
   max-height: 150px;
   max-width: 150px;
   position:absolute;
+}
+.MrPBH{
+  content:url(https://i.redd.it/tn9x2ekxqnsz.png);
+  max-height: 300px;
+  max-width: 300px;
+  position:absolute;
+}
+.birdPerson:hover {
+  transform: rotate(360deg);
+}
+.line-up {
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  border-color: solid black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.line-up:hover {
+  cursor: pointer;
+  background-color: #ed9f4b;
 }
