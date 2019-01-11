@@ -73,3 +73,14 @@ body, a:link, a:visited, a:active{
   cursor: pointer;
   background-color: #ed9f4b;
 }
+.make-dance-together {
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  border-color: solid black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.make-dance-together:hover {
+  cursor: pointer;
+  background-color: #ed9f4b;
+}
