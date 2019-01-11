@@ -35,6 +35,21 @@ $(document).ready(function() {
       $('.blinky').css({top: 100, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
       $('.MrPBH').css({top: 600, "justify-content": "space-between", "display": "flex", "flex-wrap": "wrap"});
     });
+    
+    $('.birdPerson').on('mouseover', function() {
+      //var upsideDown = false;
+      if ($(this).hasClass('upsidedown') === false) {//!upsideDown) {
+        $(this).css({'transform': 'rotate(180deg)', 'transition-duration': '1s'});
+        $(this).addClass('upsidedown'); 
+        
+      } else if ($(this).hasClass('upsidedown') === true) {
+        console.log('hello world')
+        $(this).css({'transform': 'rotate(360deg)', 'transition-duration': '1s'});
+        $(this).removeClass('upsidedown');
+      }
+      //$(this).css({'transform': 'rotate(180deg)', 'transition-duration': '0.5s'});
+     // $(this).css({'transform': 'rotate(360deg)', 'transition-duration': '0.5s'});
+    });
   });
 });
 

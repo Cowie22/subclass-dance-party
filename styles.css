@@ -3,8 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
+  /*
   background-image: url("https://wallpapercave.com/wp/wp1822726.jpg");
-
+  */
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("https://wallup.net/wp-content/uploads/2016/01/252451-Rick_and_Morty-Adult_Swim-space-animation-planet.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   font-size: 18px;
@@ -30,13 +32,16 @@ body, a:link, a:visited, a:active{
   
 }
 .blinky{
-  content:url(https://vignette.wikia.nocookie.net/rickandmorty/images/1/19/Pickle_rick_transparent.png/revision/latest?cb=20171025014216);
+  content:url(https://cdn2.scratch.mit.edu/get_image/user/17155121_60x60.png);
   max-height: 125px;
   max-width: 125px;
   position:absolute;
 }
 .meeseeks{
+  /*
   content:url(https://i.pinimg.com/originals/a4/ee/b6/a4eeb6c4d12bdf04115e8db1bebb5395.png);
+  */
+  content:url(https://thumbs.gfycat.com/MiserableNaturalJaguar-max-1mb.gif);
   max-height: 150px;
   max-width: 150px;
   position:absolute;
@@ -48,13 +53,14 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .MrPBH{
-  content:url(https://i.redd.it/tn9x2ekxqnsz.png);
-  max-height: 300px;
-  max-width: 300px;
+  content:url(https://media.giphy.com/media/kWMu5NER8omrXjKpVB/giphy.gif);
+  max-height: 150px;
+  max-width: 150px;
   position:absolute;
 }
-.birdPerson:hover {
-  transform: rotate(360deg);
+
+.roated {
+  transform: (45deg);
 }
 .line-up {
   transition-duration: 0.5s;
