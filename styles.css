@@ -84,3 +84,41 @@ body, a:link, a:visited, a:active{
   cursor: pointer;
   background-color: #ed9f4b;
 }
+
+.dancer1 {
+  -webkit-animation: flip-scale-up-diag-2 2s linear infinite alternate-reverse both;
+          animation: flip-scale-up-diag-2 2s linear infinite alternate-reverse both;
+}
+.dancer2 {
+  -webkit-animation: flip-scale-up-diag-2 1s linear infinite alternate-reverse both;
+          animation: flip-scale-up-diag-2 1s linear infinite alternate-reverse both;
+}
+
+@-webkit-keyframes flip-scale-up-diag-2 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotate3d(-1, 1, 0, 90deg);
+            transform: scale(2.5) rotate3d(-1, 1, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 180deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 180deg);
+  }
+}
+@keyframes flip-scale-up-diag-2 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotate3d(-1, 1, 0, 90deg);
+            transform: scale(2.5) rotate3d(-1, 1, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 180deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 180deg);
+  }
+}
