@@ -11,7 +11,9 @@ describe('birdpersonDancer', function() {
   it('should have a jQuery $node object', function() {
     expect(birdperson.$node).to.be.an.instanceof(jQuery);
   });
-
+  it('should have a birdperson class', function() {
+    expect(birdperson.$node.hasClass('birdPerson')).to.be.equal(true);
+  });
   it('should have a step function that makes its node slide', function() {
     sinon.spy(birdperson.$node, 'slideToggle');
     birdperson.step();

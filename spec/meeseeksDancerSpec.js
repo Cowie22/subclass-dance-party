@@ -11,7 +11,9 @@ describe('meeseeksDancer', function() {
   it('should have a jQuery $node object', function() {
     expect(meeseekDancer.$node).to.be.an.instanceof(jQuery);
   });
-
+  it('should have a meeseeks class', function() {
+    expect(meeseekDancer.$node.hasClass('meeseeks')).to.be.equal(true);
+  });
   it('should have a step function that makes its node blink', function() {
     sinon.spy(meeseekDancer.$node, 'fadeToggle');
     meeseekDancer.step();
